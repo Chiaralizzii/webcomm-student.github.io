@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(19, 11, 101, 0.88);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ======================== */
+/* HEADER                   */
+/* ======================== */
+.hero-header {
+    position: relative;
+    height: 75vh;
+    background: url('Blunotte.jpg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 2em;
+}
+
+.hero-header .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(3px);
+    z-index: 1;
+}
+
+.hero-logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 1em;
+    z-index: 2;
+}
+
+.hero-header h1 {
+    font-size: 4.5em;
+    font-family: 'Impact', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    z-index: 2;
+}
+
+.hero-header .subtitle {
+    font-size: 1.6em;
+    margin-top: 0.5em;
+    z-index: 2;
+}
+
+.hero-btn {
+    margin-top: 2em;
+    padding: 0.8em 1.8em;
+    background-color: #C45BAA;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 2;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #a8478e;
+    transform: scale(1.05);
+}
+
+/* ======================== */
+/* MENU                     */
+/* ======================== */
+#menu {
+    width: 100%;
+    background-color: #ac1974;
+    display: flex;
+    justify-content: center;
+    padding: 2em 0;
+    gap: 2em;
+}
+
+#menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+#menu a:hover {
+    color: rgba(22, 31, 86, 0.8);
+}
+
+/* ======================== */
+/* SECTIONS GENERALI        */
+/* ======================== */
+section {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    border-radius: 12px;
+}
+
+section h2 {
+    font-family: Verdana, Tahoma, sans-serif;
+    margin-bottom: 0.8em;
+    font-size: 2em;
+    color: #AC1974;
+    text-shadow: 0px 0px 8px rgba(196, 91, 170, 0.5);
+}
+
+/* ======================== */
+/* PROPOSALS GRID           */
+/* ======================== */
+.proposals-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    padding: 3em 0 2em 0;
+}
+
+.proposal-card {
+    background-color: #ac1974;
+    color: white;
+    padding: 2em;
+    border-radius: 14px;
+    transition: transform 0.25s, background-color 0.25s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.proposal-card:hover {
+    transform: scale(1.05);
+    background-color: #801256;
+}
+
+/* ======================== */
+/* SLIDER GALLERIA          */
+.slider-container {
+    position: relative;
+    width: 300px;   /* dimensione quadrata */
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #fff; /* se vuoi sfondo bianco */
+}
+
+.slider-wrapper {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* ======================== */
+/* CALENDARIO               */
+/* ======================== */
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.day-header {
+    font-weight: bold;
+    padding: 0.5em 0;
+    background-color: #ac1974;
+    color: white;
+    border-radius: 4px;
+}
+
+.weekend {
+    background-color: #801256;
+}
+
+.day {
+    padding: 1em 0;
+    border-radius: 6px;
+    background-color: #ac1974;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+    font-weight: bold;
+}
+
+.day[data-has-event="true"] {
+    background-color: #801256;
+}
+
+.day.weekend {
+    background-color: #ff1493;
+}
+
+.day:hover {
+    transform: scale(1.1);
+    background-color: #ff69b4;
+}
+
+/* ======================== */
+/* NEWSLETTER               */
+/* ======================== */
+#newsletter input[type="email"] {
+    padding: 0.6em;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    margin-top: 1em;
+}
+
+#newsletter button {
+    padding: 0.6em 1.2em;
+    margin-left: 0.5em;
+    background-color: #ac1974;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#newsletter button:hover {
+    background-color: #801256;
+}
+
+/* ======================== */
+/* SOCIAL ICONS             */
+/* ======================== */
+.social-icons {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    border-radius: 8px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.social-icons a.facebook { background-color: #3b5998; }
+.social-icons a.instagram { background-color: #e4405f; }
+.social-icons a.X { background-color: #1da1f2; }
+
+.social-icons a:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/* ======================== */
+/* FOOTER                   */
+/* ======================== */
+#footer {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.45); 
+    color: #ffffff; 
+    text-align: center;
+    padding: 1em 0;
+}
+
+
+/* MEDIA QUERIES - RESPONSIVE */
+
+/* Tablet */
+@media (max-width: 900px) {
+    .proposals-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-header h1 {
+        font-size: 3em;
+    }
+
+    .hero-header .subtitle {
+        font-size: 1.3em;
+    }
+
+    #menu a {
+        font-size: 1.2em;
+    }
+}
+
+/* Smartphone */
+@media (max-width: 600px) {
+    .proposals-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-header {
+        height: 60vh;
+        padding: 0 1em;
+    }
+
+    .hero-header h1 {
+        font-size: 2em;
+    }
+
+    .hero-header .subtitle {
+        font-size: 1em;
+    }
+
+    #menu {
+        flex-direction: column;
+        padding: 1em 0;
+        gap: 1em;
+    }
+
+    #menu a {
+        font-size: 1em;
+    }
+
+    #newsletter input[type="email"] {
+        width: 100%;
+        max-width: 250px;
+    }
+}
