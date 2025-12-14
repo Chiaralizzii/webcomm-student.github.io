@@ -1,0 +1,68 @@
+.reveal {
+    background-color: rgba(19, 11, 101, 0.88); /* blu scuro del sito */
+    color: white;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+/* Titoli principali (H1 e H2) */
+.reveal h1, .reveal h2 {
+    font-family: Verdana, Tahoma, sans-serif;
+    color: #C45BAA; /* rosa del sito */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Testo dei paragrafi e liste */
+.reveal p, .reveal li {
+    font-family: Verdana, Tahoma, sans-serif;
+    color: #ffffff;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+/* --- Pulsanti / link --- */
+.reveal a {
+    color: #C45BAA;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.reveal a:hover {
+    color: #AC1974; /* fucsia più scuro */
+}
+
+/* --- Sfondo delle slide secondarie (es. code, note, alert) --- */
+.reveal .slide {
+    background-color: rgba(19, 11, 101, 0.9); /* leggermente trasparente */
+    border-radius: 15px;
+    padding: 2em;
+}
+
+/* --- Evidenziazioni / codici --- */
+.reveal code {
+    background-color: rgba(172, 25, 116, 0.2);
+    color: #ffffff;
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+}
+
+/* --- Numeri slide e controllo progress bar --- */
+.reveal .slide-number,
+.reveal .progress {
+    color: #C45BAA;
+}
+
+/* --- Pulsante "hero" simile al sito --- */
+.hero-btn {
+    padding: 0.8em 1.6em;
+    background: #C45BAA;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.hero-btn:hover {
+    background: #AC1974;
+}

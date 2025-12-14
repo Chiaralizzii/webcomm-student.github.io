@@ -1,156 +1,40 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <title>Luci di Milano</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="stile.css">
-    <script src="script.js" defer></script>
-</head>
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<body>
+		<title>reveal.js</title>
 
-    <header class="hero-header" id="home">
-    <div class="overlay"></div>
-    <img src="Images/milano.jpg" alt="Logo" class="hero-logo">
-    <h1>Luci di Milano</h1>
-    <p class="subtitle">La notte si accende, vivi la magia.</p>
-    <a href="#menu" class="hero-btn">Scopri di più</a>
-</header>
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
 
-    <div id="menu">
-    <a href="#about-us">Home</a>
-    <a href="#next-events">Eventi</a>
-    <a href="#newsletter">Contatti</a>
-</div>
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>Slide 1</section>
+				<section>Slide 2</section>
+			</div>
+		</div>
 
-<!-- Contenitore per Home -->
-<section id="about-us">
-        <h2>CHI SIAMO</h2>
-        <p>Milano si accende...</p>
-        <p>Luci di Milano ti accompagna tra eventi, serate e luoghi da vivere nella città che brilla anche di notte.</p>
-</section>
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
 
-<section id="proposals">
-        <h2>LE NOSTRE PROPOSTE</h2>
-     <div class="proposals-grid">
-
-        <div class="proposal-card">
-            <h3>🎨 Serate culturali</h3>
-            <p>Mostre, musei, performance artistiche e iniziative culturali per scoprire Milano.</p>
-        </div>
-
-        <br> <div class="proposal-card">
-            <h3>🍹 Aperitivi</h3>
-            <p>I migliori locali in cui godersi un drink dopo il tramonto.</p>
-        </div> <br>
-
-       <br>  <div class="proposal-card">
-            <h3>🎧 Concerti</h3>
-            <p>Dalla musica live ai grandi eventi nei club e nei teatri.</p>
-        </div> <br>
-
-       <br>  <div class="proposal-card">
-            <h3>🎬 Cinema sotto le stelle</h3>
-            <p>Proiezioni all’aperto nei cortili, parchi e luoghi nascosti della città.</p>
-        </div> <br>
-
-       <br> <div class="proposal-card">
-            <h3>🎓 Feste universitarie</h3>
-            <p>Eventi dedicati agli studenti, party e serate a tema.</p>
-        </div> <br>
-
-       <br> <div class="proposal-card">
-            <h3>🪩 Discoteche</h3>
-            <p>Le migliori piste per ballare fino all’alba.</p>
-        </div> <br>
-</div>
-</section>
-
- <section id="next-events">
-    <h2>PROSSIMI EVENTI</h2>
-    <p>Ecco gli eventi in arrivo questa settimana a Milano:</p>
-   <br> <div class="calendar">
-    <div class="day-header">Lun</div>
-        <div class="day-header">Mar</div>
-        <div class="day-header">Mer</div>
-        <div class="day-header">Gio</div>
-        <div class="day-header">Ven</div>
-        <div class="day-header weekend">Sab</div>
-        <div class="day-header weekend">Dom</div>
-        <div class="day" data-has-event="true">1</div>
-        <div class="day" data-has-event="true">2</div>
-        <div class="day" data-has-event="false">3</div>
-        <div class="day" data-has-event="false">4</div>
-        <div class="day" data-has-event="true">5</div>
-        <div class="day" data-has-event="false">6</div>
-        <div class="day" data-has-event="false">7</div>
-        <div class="day" data-has-event="true">8</div>
-        <div class="day" data-has-event="false">9</div>
-        <div class="day" data-has-event="true">10</div>
-        <div class="day" data-has-event="false">11</div>
-        <div class="day" data-has-event="true">12</div>
-        <div class="day" data-has-event="false">13</div>
-        <div class="day" data-has-event="true">14</div>
-        <div class="day" data-has-event="true">15</div>
-        <div class="day" data-has-event="false">16</div>
-        <div class="day" data-has-event="true">17</div>
-        <div class="day" data-has-event="true">18</div>
-        <div class="day" data-has-event="false">19</div>
-        <div class="day" data-has-event="true">20</div>
-        <div class="day" data-has-event="false">21</div>
-        <div class="day" data-has-event="true">22</div>
-        <div class="day" data-has-event="false">23</div>
-        <div class="day" data-has-event="true">24</div>
-        <div class="day" data-has-event="true">25</div>
-        <div class="day" data-has-event="false">26</div>
-        <div class="day" data-has-event="true">27</div>
-        <div class="day" data-has-event="false">28</div>
-        <div class="day" data-has-event="false">29</div>
-        <div class="day" data-has-event="true">30</div>
-        <div class="day" data-has-event="true">31</div>
-    </div> <br>
-</section>
-
-<section id="gallery">
-    <h2>GALLERIA</h2>
-    <p>Alcuni momenti dalle serate passate!</p>
-
-    <div class="slider-container">
-         <div class="slider-wrapper">
-            <div class="slide"><img src="Images/Serate culturali.jpg" alt="Serate culturali"></div>
-            <div class="slide"><img src="Images/Aperitivo.jpg" alt="Aperitivi"></div>
-            <div class="slide"><img src="Images/Cinema.jpg" alt="Cinema sotto le stelle"></div>
-            <div class="slide"><img src="Images/Feste universitarie.jpg" alt="Feste universitarie"></div>
-            <div class="slide"><img src="Images/Concerti.jpg" alt="Concerti"></div>
-            <div class="slide"><img src="Images/Discoteca.jpg" alt="Discoteche"></div>
-        </div>
-    </div>
-</section>
-
-<section id="newsletter">
-    <h2>NEWSLETTER</h2>
-    <p>Iscriviti per restare aggiornato su eventi e serate.</p>
-    <input type="email" placeholder="Inserisci la tua email">
-    <button>Iscriviti</button>
-</section>
-
-<section id="contact">
-    <h2>CONTATTACI</h2>
-    <p>Scrivici per collaborazioni o suggerimenti.</p>
-    <p>Email: info@lucidimilano.it</p>
-    <p>Seguici sui nostri profili social:</p>
-    <div class="social-icons">
-        <a href="#" class="facebook">Facebook</a>
-        <a href="#" class="instagram">Instagram</a>
-        <a href="#" class="X">X</a>
-    </div>
-</section>
-
- <footer id="footer">
-        <p>&copy; Tutti i diritti riservati - 2025</p>
- </footer>
-
-</body>
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
 </html>
-
