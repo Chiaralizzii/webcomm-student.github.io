@@ -16,9 +16,6 @@ body {
     min-height: 100vh;
 }
 
-/* ======================== */
-/* HEADER                   */
-/* ======================== */
 .hero-header {
     position: relative;
     height: 75vh;
@@ -77,9 +74,6 @@ body {
     transform: scale(1.05);
 }
 
-/* ======================== */
-/* MENU                     */
-/* ======================== */
 #menu {
     width: 100%;
     background-color: #ac1974;
@@ -99,9 +93,6 @@ body {
     color: rgba(22, 31, 86, 0.8);
 }
 
-/* ======================== */
-/* SECTIONS GENERALI        */
-/* ======================== */
 section {
     width: 100%;
     background-color: #ffffff;
@@ -120,9 +111,6 @@ section h2 {
     text-shadow: 0px 0px 8px rgba(196, 91, 170, 0.5);
 }
 
-/* ======================== */
-/* PROPOSALS GRID           */
-/* ======================== */
 .proposals-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -144,15 +132,13 @@ section h2 {
     background-color: #801256;
 }
 
-/* ======================== */
-/* SLIDER GALLERIA          */
 .slider-container {
     position: relative;
-    width: 300px;   /* dimensione quadrata */
+    width: 300px;   
     height: 300px;
     margin: 0 auto;
     overflow: hidden;
-    background-color: #fff; /* se vuoi sfondo bianco */
+    background-color: #fff; 
 }
 
 .slider-wrapper {
@@ -176,9 +162,6 @@ section h2 {
     border-radius: 15px;
 }
 
-/* ======================== */
-/* CALENDARIO               */
-/* ======================== */
 .calendar {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -220,9 +203,6 @@ section h2 {
     background-color: #ff69b4;
 }
 
-/* ======================== */
-/* NEWSLETTER               */
-/* ======================== */
 #newsletter input[type="email"] {
     padding: 0.6em;
     width: 250px;
@@ -246,9 +226,6 @@ section h2 {
     background-color: #801256;
 }
 
-/* ======================== */
-/* SOCIAL ICONS             */
-/* ======================== */
 .social-icons {
     margin-top: 1em;
     display: flex;
@@ -274,9 +251,6 @@ section h2 {
     opacity: 0.8;
 }
 
-/* ======================== */
-/* FOOTER                   */
-/* ======================== */
 #footer {
     width: 100%;
     background: rgba(0, 0, 0, 0.45); 
@@ -285,8 +259,6 @@ section h2 {
     padding: 1em 0;
 }
 
-
-/* MEDIA QUERIES - RESPONSIVE */
 
 /* Tablet */
 @media (max-width: 900px) {
