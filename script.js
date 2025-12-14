@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    /* --- Script calendario --- */
     const slides = document.querySelectorAll('.slide');
     const wrapper = document.querySelector('.slider-container .slider-wrapper');
 
